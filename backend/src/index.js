@@ -22,7 +22,7 @@ dotenv.config();
 
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://chat-application-frontend-coral.vercel.app/', credentials: true }));
 app.use(bodyParser.json({ limit: '50mb' })); 
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
