@@ -102,7 +102,7 @@ export const useAuthStore = create((set,get)=>({
     connectSocket:() =>{
         const {authUser} = get();
         if(!authUser ||get().socket?.connected) return;
-        const socket = io("https://chat-app-backend-lpmu.onrender.com",{
+        const socket = io("https://chat-app-backend-lpmu.onrender.com/api",{
             query:{
                 userId:authUser._id
             }
