@@ -3,10 +3,10 @@ import toast from 'react-hot-toast';
 import {axiosInstance} from '../lib/axios.js';
 import { useAuthStore } from './useAuthStore.js';
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+const BASE_URL = import.meta.env.VITE_API_URL ;
 
 export const useChatStore = create((set,get)=>({
-    messages: [],
+    messages: [], 
     users:[],
     selectedUser: null,
     iseUsersLoading: false,
